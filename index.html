@@ -4,43 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jorginho da Costa | Desenvolvedor Android</title>
+
+  <!-- Font Awesome para ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- AOS para animações ao rolar -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <style>
-           /* Estilo simples para o botão */
-        .doacao-botao {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 25px;
-            text-align: center;
-            font-size: 18px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            }
     /* Reset básico */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Poppins', Arial, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
       line-height: 1.6;
-      padding: 0;
-      margin: 0;
+      overflow-x: hidden;
     }
+
     header {
-      background: linear-gradient(135deg, #0077cc, #005fa3);
-      color: white;
+      background: transparent;
       padding: 50px 20px;
       text-align: center;
     }
+
     nav {
       margin-top: 15px;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
@@ -49,23 +45,29 @@
       font-size: 16px;
       transition: opacity 0.3s;
     }
+
     nav a:hover {
       opacity: 0.8;
     }
+
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      text-align: center;
     }
+
     h2 {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 20px;
-      color: #0077cc;
+      color: #ffd700;
     }
+
     p, ul {
       font-size: 18px;
       margin-bottom: 20px;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -73,57 +75,95 @@
       justify-content: center;
       margin-top: 30px;
     }
+
     .gallery img {
       width: 100%;
       max-width: 300px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s;
     }
+
     .gallery img:hover {
       transform: scale(1.05);
     }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 2em;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ffd700;
+      transform: scale(1.2);
+    }
+
     footer {
-      background: #005fa3;
+      background: #2c2f48;
       color: white;
       text-align: center;
       padding: 30px 20px;
       margin-top: 50px;
     }
+
     button {
-      background-color: white;
-      color: #005fa3;
-      border: 2px solid white;
+      background-color: #ffd700;
+      color: #000;
+      border: none;
       padding: 10px 25px;
       border-radius: 25px;
       cursor: pointer;
       margin-top: 20px;
       font-size: 16px;
-      transition: all 0.3s;
+      transition: background 0.3s;
     }
+
     button:hover {
-      background-color: #005fa3;
-      color: white;
-      border: 2px solid white;
+      background-color: #ffae00;
     }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .doacao-botao {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 5px;
+    }
+
     ul {
       list-style: none;
     }
+
     ul li {
       margin-bottom: 10px;
-    }
-    a {
-      color: #005fa3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-<header>
+<header data-aos="fade-down">
   <h1>Helioz Dev</h1>
   <p>Desenvolvedor e Modder de Aplicativos Android Moçambicano</p>
   <nav>
@@ -133,16 +173,20 @@
   </nav>
 </header>
 
-<section id="sobre">
+<section id="sobre" data-aos="fade-up">
   <h2>Sobre Mim</h2>
-  <p>Sou desenvolvedor e modder de aplicativos Android. Trabalho criando e modificando apps para torná-los mais rápidos, leves e personalizados. Estou sempre buscando inovação e qualidade em cada projeto que desenvolvo ou modifico. Moçambicano🇲🇿</p>
-  </p>
-  <header>
-    <a href="https://appteka.store/profile/492269" class="doacao-botao">PlayStore</a></p>
-    </header>
+  <p>Sou desenvolvedor e modder de aplicativos Android. Trabalho criando e modificando apps para torná-los mais rápidos, leves e personalizados. Sempre buscando inovação e qualidade. Moçambicano 🇲🇿</p>
+  <div class="social-links">
+    <a href="https://github.com/jorginhoda125" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://facebook.com/jorginho.dacosta.1" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com/jorginhoda125" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com/@helioz_dev" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://tiktok.com/@jorginhoda127" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <a href="https://appteka.store/profile/492269" class="doacao-botao" target="_blank">PlayStore</a>
 </section>
 
-<section id="portfolio">
+<section id="portfolio" data-aos="fade-up">
   <h2>Portfólio</h2>
   <div class="gallery">
     <img src="https://raw.githubusercontent.com/jorginhoda125/Helioz_web/refs/heads/main/5f0e8c8c0d8063d689149c55d0a5cea50ae8c52c.jpg" alt="App 1">
@@ -151,42 +195,40 @@
   </div>
 </section>
 
-<section id="contato">
+<section id="contato" data-aos="fade-up">
   <h2>Contato</h2>
-  <p>Email: <a href="mailto: jojofeniad@gmail.com">jojofeniad@gmail.com</a></p>
+  <p>Email: <a href="mailto:jojofeniad@gmail.com">jojofeniad@gmail.com</a></p>
   <p>WhatsApp: <a href="https://wa.me/258842834889" target="_blank">Conversar no WhatsApp</a></p>
-   <p>WA Grupo 1: <a href="https://chat.whatsapp.com/HHe3pW3Z7w3As1lH9DTYfS" target="_blank">Hacker 💯% Profissional</a></p>
-   <p>WA Grupo 2: <a href="https://chat.whatsapp.com/HMfyzruI1yIHe1Se8il8jm" target="_blank">Helioz - Tutorial</a></p>
-    <p>WA Grupo 3: <a href="https://chat.whatsapp.com/DE2k2quhDwA9hrijENQdBz" target="_blank">Helioz Chat</a></p>
-    <h2>Telegrama</h2>
-     <p>Grupo: <a href="https://t.me/helioz868" target="_blank">Helioz - Tutorial Mz</a></p>
-      <p>Canal: <a href="https://t.me/helioz_dev" target="_blank">Helioz - Dev</a></p>
-  <ul>
-      <h2>Redes Sociais</h2>
-    <li><a href="https://github.com/jorginhoda125" target="_blank">GitHub</a></li>
-     <li><a href="https://youtube.com/@helioz_dev" target="_blank">YouTube</a></li>
-    <li><a href="https://www.instagram.com/jorginhoda125" target="_blank">Instagram</a></li>
-     <li><a href="https://www.facebook.com/jorginho.dacosta.1" target="_blank">Facebook</a></li>
-      <li><a href="https://www.tiktok.com/@jorginhoda127" target="_blank">TikTok</a></li>
-    <!-- Adicione mais contas se quiser -->
-  </ul>
+  <p>WA Grupo 1: <a href="https://chat.whatsapp.com/HHe3pW3Z7w3As1lH9DTYfS" target="_blank">Hacker 100% Profissional</a></p>
+  <p>WA Grupo 2: <a href="https://chat.whatsapp.com/HMfyzruI1yIHe1Se8il8jm" target="_blank">Helioz - Tutorial</a></p>
+  <p>WA Grupo 3: <a href="https://chat.whatsapp.com/DE2k2quhDwA9hrijENQdBz" target="_blank">Helioz Chat</a></p>
 </section>
-  <section id="sobre">
+
+<section data-aos="fade-up">
+  <h2>Telegram</h2>
+  <p>Grupo: <a href="https://t.me/helioz868" target="_blank">Helioz - Tutorial Mz</a></p>
+  <p>Canal: <a href="https://t.me/helioz_dev" target="_blank">Helioz - Dev</a></p>
+</section>
+
+<section data-aos="fade-up">
   <h2>Chamadas e SMS</h2>
-  <p>Vodacom: <a href="tel:852233065">852233065</a></p> <p>Movitel: <a href="tel:865889149">865889149</p>
-  
-     <h2>Ajude-nos com uma doação!</h2>
-    
-    <a href="tel:865889149" class="doacao-botao">Fazer Doação No E-mola</a></p>
-     <a href="tel:865889149" class="doacao-botao">Fazer Doação No M-Pesa</a>
-    
+  <p>Vodacom: <a href="tel:852233065">852233065</a></p> 
+  <p>Movitel: <a href="tel:865889149">865889149</a></p>
+
+  <h2>Ajude-nos com uma doação!</h2>
+  <a href="tel:865889149" class="doacao-botao">Fazer Doação no E-mola</a>
+  <a href="tel:865889149" class="doacao-botao">Fazer Doação no M-Pesa</a>
 </section>
-<footer>
+
+<footer data-aos="fade-up">
   <p>© 2025 Helioz Dev. Todos os direitos reservados.</p>
   <button onclick="scrollToTop()">Voltar ao Topo</button>
 </footer>
 
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+  AOS.init();
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
